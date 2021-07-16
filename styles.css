@@ -1,0 +1,58 @@
+body {
+  display: grid;
+  height: 95vh;
+  place-items: center;
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-size: 3rem;
+  font-family: 'Bowlby One', cursive;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  margin: 10px;
+  display: inline;
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.gameover {
+  background-color: red;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.btn:active{
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.active{
+  box-shadow: 0 0 10px white;
+  background-color: white;
+}
+
