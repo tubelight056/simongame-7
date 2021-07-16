@@ -33,12 +33,14 @@ function Simongame(){
     this.check=()=>{
         for(i=0;i<playerspattern.length;i++){
             if(playerspattern[i]!=createdPattern[i]){
-                console.log(playerspattern,createdPattern);
                 start=false;
             }
         }
+
         if(start){
+            
             if(playerspattern.length==createdPattern.length){
+                
                 this.create();
                 playerspattern=[];
             }
@@ -48,7 +50,6 @@ function Simongame(){
         }
     }
     this.create=()=>{
-        if(!start){
         let newColor = colors[Math.floor(Math.random()*4)];
         createdPattern.push(newColor);
         setTimeout(() => {
@@ -57,7 +58,7 @@ function Simongame(){
         }, 1000);
         setTimeout(() => {
             document.querySelector(`.${newColor}`).classList.remove('active');
-        }, 1500);}
+        }, 1500);
     }   
     this.clicked=(color)=>{
         if(start){
